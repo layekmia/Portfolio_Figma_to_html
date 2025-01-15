@@ -1,0 +1,171 @@
+@media (max-width:1190px) {
+    header{
+        background-size: auto 90%, calc(900px * var(--scale-factor)) calc(518px * var(--scale-factor));
+    }
+    nav{
+        padding: 24px 3.4rem 0 4.375rem;
+    }
+    #hero-section{
+        margin: 5rem 3rem 0;
+    }
+    #hero-section .hero-content{
+        align-self: flex-start;
+    }
+    #hero-section .hero-image img{
+        height: 500px;
+    }
+     /* * End of the header and hero section */
+
+     .footer-section{
+        padding: 111px 120px;
+     }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    header{
+        background-size: auto 90%, calc(820px * var(--scale-factor)) calc(518px * var(--scale-factor));
+        background-position: 30px 30px, 100% bottom;
+    }
+    #hero-section{
+        flex-direction: column;
+        margin: 5rem 2rem 0;
+    }
+    #hero-section .hero-content{
+        align-self: center;
+    }
+    #hero-section .hero-content .name {
+        font-size: 3.5rem;
+    }
+    #hero-section .hero-image{
+        width: 100%;
+        text-align: right;
+    }
+    .download-btn{
+        margin-right: 20px;
+    }
+     /* * End of the header and hero section */
+
+    main .about-section {
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 70px 80px;
+    }
+    main .about-section .about-content{
+        padding: 30px;
+    }
+    main .about-content .contact-info{
+        justify-content: center;
+    }
+    /* Skills section */
+    main .skill-section .skill-cards{
+        gap: 20px;
+    }
+    main .skill-section .skill-cards .skill-card{
+        flex-basis:calc(50% - 10px);
+    }
+
+    /* * Experience section */
+    main .resume-section .resume-cards{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* *Footer section */
+    .footer-section{
+        padding: 80px 60px;
+        gap: 70px;
+    }
+}
+
+@media (max-width: 768px){
+    .footer-section{
+        padding: 50px 30px;
+        gap: 70px;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 576px) {
+    header {
+        background: url("../assets/developer.png"), url(../assets/header_bg.png);
+        background-repeat: no-repeat;
+        background-size: auto 80%,
+          calc(600px * var(--scale-factor)) calc(400px * var(--scale-factor));
+        background-position: 20px 30px, bottom;
+        background-color: var(--primary-bg);
+    }
+    nav{
+        padding: 15px 1.5rem 0 1.5rem;
+    }
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: inline-block;
+    }
+    #hero-section{
+        gap: 50px;
+    }
+    #hero-section .hero-image{
+        text-align: center;
+    }
+    #hero-section .hero-image img{
+        height: 350px;
+    }
+    #hero-section .hero-content .name {
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+    #hero-section .hero-content .greetings{
+        line-height: 0;
+    }
+    #hero-section .hero-content .description{
+        margin-top: -15px;
+    }
+    .brtag{
+        display: none;
+    }
+
+    /* * End of the header and hero section */
+    main .about-section {
+        max-width: 100%;
+        margin: 50px auto;
+        padding: 50px 20px;
+    }
+    main .about-section .about-content{
+        padding: 15px;
+    }
+    main .skill-section .skill-cards .skill-card{
+        flex-basis:calc(100% - 10px);
+    }
+
+    /** experience section */
+    main .resume-section{
+        margin: 80px auto 70px auto;
+    }
+    main .resume-section .resume-heading{
+        line-height: 2.7rem;
+        font-size: 2.5rem;
+    }
+    main .resume-section .resume-cards{
+        margin-bottom: 3rem;
+    }
+    main .resume-section .resume-cards .education{
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+    main .resume-section .resume-cards .education-cards .edu-info-card{
+        text-align: center;
+        padding: 0;
+    }
+
+
+}
+
+

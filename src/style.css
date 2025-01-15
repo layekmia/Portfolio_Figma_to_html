@@ -46,12 +46,19 @@ html {
   border: 1px solid rgb(253, 110, 10);
   background-color: transparent;
 }
+
+.mobile-menu{
+  display: none;
+}
+
+/** Header section */
+
 header {
   background: url("../assets/developer.png"), url(../assets/header_bg.png);
   background-repeat: no-repeat;
   background-size: auto 90%,
-    calc(850px * var(--scale-factor)) calc(518px * var(--scale-factor));
-  background-position: 20px 30px, right bottom;
+    calc(1036px * var(--scale-factor)) calc(518px * var(--scale-factor));
+  background-position: 20px 30px, 150% bottom;
   background-color: var(--primary-bg);
 }
 
@@ -127,6 +134,7 @@ nav ul a {
 #hero-section .hero-image img {
   max-width: calc(584px * var(--scale-factor));
   height: calc(676px * var(--scale-factor));
+  margin-bottom: -3px ;
 }
 #hero-section .hero-content .buttons button img {
   margin-right: 5px;
@@ -162,6 +170,8 @@ main .about-content .about-description {
 main .about-content .contact-info {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -181,13 +191,16 @@ main .about-content .contact-info p span:last-child {
   font-weight: 700;
   line-height: 2rem;
 }
-
+main .about-content .contact-info a{
+  color: rgb(117, 117, 117);
+}
 /* Skill section style */
 
 main .skill-section {
-  max-width: calc(1140px * var(--scale-factor));
+  max-width: calc(1170px * var(--scale-factor));
   margin: 0 auto;
   text-align: center;
+  padding: 0 30px;
 }
 
 main .skill-section .skill-heading {
@@ -210,11 +223,12 @@ main .skill-section .skill-description {
 }
 main .skill-section .skill-cards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
 }
 main .skill-section .skill-cards .skill-card {
+  flex-basis: 24%;
   border-radius: 5px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   background: rgb(255, 255, 255);
@@ -245,9 +259,10 @@ main .skill-section .skill-cards .skill-card .card-descrip {
 
 /* *** ============ Resume styling ===========*/
 main .resume-section {
-  max-width: calc(1140px * var(--scale-factor));
+  max-width: calc(1170px * var(--scale-factor));
   margin: 111px auto 98px auto;
   text-align: center;
+  padding: 0 30px;
 }
 
 main .resume-section .resume-btn img {
